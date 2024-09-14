@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: Produtos
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/banco
+    username: admin
+    password: admin
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
